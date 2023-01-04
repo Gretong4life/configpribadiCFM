@@ -1,0 +1,33 @@
+proxies:
+  - name: cobainvmess
+    server: 104.18.20.226
+    port: 443
+    type: vmess
+    uuid: ede1e86a-ea81-401a-856a-4a73bfd01d91
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg.tempestvpn.biz.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg.tempestvpn.biz.id
+    udp: true
+  - name: akunprempertama
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: 65f267a2-a885-4ce0-8cd9-bfee3ce82077
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vip-member.jomblovip.me
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vip-member.jomblovip.me
+    udp: true
