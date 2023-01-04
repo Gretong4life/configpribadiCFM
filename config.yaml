@@ -34,7 +34,7 @@ proxy-groups:
     use:
       - "provide"            
 proxy-providers:
-   "provide":
+   provide:
     type: file
     url: "https://raw.githubusercontent.com/Gretong4life/configpribadiCFM/main/proxy_provider/akun.yaml"
     path: ./proxy_provider/akun.yaml
