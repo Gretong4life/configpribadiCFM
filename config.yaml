@@ -7,7 +7,7 @@ proxy-groups:
       - BEST PING
       - FALLBACK
     use:
-      - provide
+      - "provide"
   - name: "LOADBALANCE"
     type: load-balance
     strategy: round-robin
@@ -16,7 +16,7 @@ proxy-groups:
     interval: 1
     lazy: false
     use:
-      - provide
+      - "provide"
   - name: "BEST PING"
     type: url-test
     disable-udp: false
@@ -25,18 +25,18 @@ proxy-groups:
     tolerance: 150
     lazy: false
     use:
-      - provide
+      - "provide"
   - name: "FALLBACK"
     type: fallback
     disable-udp: false
     interval: 1
     lazy: false
     use:
-      - provide            
+      - "provide'            
 proxy-providers:
-  provide:
+  "provide":
     type: file
-    url: https://raw.githubusercontent.com/Gretong4life/configpribadiCFM/main/proxy_provider/akun.yaml
+    url: "https://raw.githubusercontent.com/Gretong4life/configpribadiCFM/main/proxy_provider/akun.yaml"
     path: ./proxy_provider/akun.yaml
     health-check:
       enable: true
